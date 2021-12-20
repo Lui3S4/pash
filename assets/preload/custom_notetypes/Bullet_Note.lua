@@ -20,7 +20,7 @@ function goodNoteHit(id, direction, noteType, isSustainNote)
 		if difficulty == 2 then
 			playSound('hankshoot', 0.5);
 		end
-		characterPlayAnim('dad', shootAnims[direction + 1], false);
+		characterPlayAnim('dad', shot[direction + 1], false);
 		characterPlayAnim('boyfriend', 'dodge', true);
 		setProperty('boyfriend.specialAnim', true);
 		setProperty('dad.specialAnim', true);
